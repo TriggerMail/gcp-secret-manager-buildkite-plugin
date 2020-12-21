@@ -1,2 +1,8 @@
 steps:
-  - command: test
+  - command: 'echo \$EXPORT_TEST && echo \$EXPORT_TEST2'
+    plugins:
+      - avaly/gcp-secret-manager#0567162:
+          credentials_file: /opt/gcloud/ci-service.json
+          env:
+            EXPORT_TEST: buildkite-test
+            EXPORT_TEST2: buildkite-test2
