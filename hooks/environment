@@ -29,8 +29,6 @@ function initialize() {
     exit 1
   fi
 
-  gcloud auth activate-service-account --key-file "${BUILDKITE_PLUGIN_GCP_SECRET_MANAGER_CREDENTIALS_FILE}"
-
   initialized="1"
 }
 
