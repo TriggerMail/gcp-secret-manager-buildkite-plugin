@@ -6,8 +6,6 @@ requirements:
   - jq
 configuration:
   properties:
-    credentials_file:
-      type: string
     env:
       type: object
   additionalProperties: false
